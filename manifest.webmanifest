@@ -1,0 +1,41 @@
+{
+    "name": "Garfield's App",
+    "short_name": "GarfieldApp",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "background_color": "#2a93a5",
+    "theme_color": "#2a93a5",
+    "categories": ["entertainment"],
+    "icons": [
+      {
+          "src": "./android-chrome-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+      },
+      {
+        "src": "./maskable_icon.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable"
+    },
+      {
+          "src": "./android-chrome-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+      }
+  ],
+    "screenshots" : 
+    [
+    {
+      "src": "./screenshot1.webp",
+      "sizes": "1226x1290",
+      "type": "image/webp"
+    },
+    {
+      "src": "./screenshot2.webp",
+      "sizes": "1222x1778",
+      "type": "image/webp"
+    }
+  ]
+}

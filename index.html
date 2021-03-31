@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta keywords="garfield, gocomics, gocomics.com, gocomics.com/garfield, comic, comics, strip, strips, cartoon, cartoons, cat, jim, davis, webapp, mobile, responsive, paws, pwa, progressive, web, app, ios, android, windows, platform, multi, platforms, independent">
+    <meta name="description" content="Garfield Comics, Current, Next, Previous, Random, First, Specific Date, Swipe">
+    <title>Daily Garfield Comics</title>
+
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <script src="./app.js"></script>
+    <script src="./swiped-events.min.js"></script>
+
+   </head>
+
+<body onload=onload()>
+
+  <h1></h1>
+  <div class="logo">
+    <img src="./garlogo.webp" style="width: 100%" alt="Daily Garfield Comics"/>
+  </div>
+</h1>  
+  
+
+  <div class="buttongrid">
+    <button class="button" id="Previous" onclick="PreviousClick()"><i class="fa fa-arrow-circle-left"></i>  Previous</button>
+    <button class="button" id="Random" onclick="RandomClick()">Random</button>
+    <button class="button" id="Next" onclick="NextClick()">Next  <i class="fa fa-arrow-circle-right"></i></button>
+    <button class="button" id="First"  onclick="FirstClick()">First</button>
+    <input id="DatePicker" oninput="DateChange()" type="date" min="1978-06-19">
+    <button class="button" id="Current" onclick="CurrentClick()">Current</button>
+  </div>  
+  <br><br>
+  <img id="comic" alt="Loading comic from https://gocomics.com..." style="width:100vw;  margin-left: -50vw; margin-right: -50vw; position: relative ;right: 50%;left:50%">
+
+  <br>
+  <br>
+  
+ <div class="legend"> 
+    <label>Next</label><label>=</label><label>&nbsp;swipe left&nbsp;</label><i class="fa fa-arrow-circle-left"></i>
+    <label>Previous&nbsp;</label><label>=</label><label>&nbsp;swipe right&nbsp;</label><i class="fa fa-arrow-circle-right"></i>
+    <label>Random</label><label>=</label><label>&nbsp;swipe down&nbsp;</label><i class="fa fa-arrow-circle-down"></i>
+    <label>Current</label><label>=</label><label>&nbsp;swipe up&nbsp;</label><i class="fa fa-arrow-circle-up"></i>
+ </div>
+ <br>
+ 
+ <div class="info">
+  <a href = mailto:garfieldapp@outlook.com ><img src="./mail.webp" alt="email address"></a>
+  <a href = https://paypal.me/bartmeijer ><img src="./paypaldonate.webp" alt="donatepaypal"></a>
+  <a href = https://garfieldapp.tk ><img src="./pwa-pass-3.svg" alt="pwa"></a>
+</div>
+
+</body>
+  
+</html>
